@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="part.css" rel="stylesheet" type="text/css" />
+  <link href="navIndex.css" rel="stylesheet" type="text/css" />
+  <title>test</title>
+
+</head>
+<body>
+  
+  <span class= "fadehead"></span>
+  <nav>
+    <ul>
+      <div class="nav-li">
+      <a href= "Loginpg.html"><li>Login</li></a>
+      <a href="missions.html"><li>Missions</li></a>
+      <a href="launch.html"><li>Launch </li></a>
+      <a href="about.html"><li>About</li></a>
+      </div>
+    </ul>
+  </nav>
+  <div class = "bgimgmain">
+  <div class="container demo">
+    <div class="content">
+      <div id="large-header" class="large-header">
+      </div>
+    </div>
+  </div>
+  <img class = "Logoimg" src = "crologo.png">
+  <div class="wrapper">
+    <div class="typing-demo">
+      REACH BEYOND YOUR LIMITS.
+    </div>
+</div>
+  </div>
+  <p class="info">
+    Cosmic Launch is an American based space launch corporation. Our Mission is to make space exploration avavlibe to everyone a reliaty.
+  </p>
+  <img class="astPicBg" src= "AstBg.png"></img>
+  <div class="container1">
+<div class="container reveal">
+  <div class="text-title">
+  <h2>Our next mission, your next exploration</h2>
+  </div>
+  <div class="main_content">
+    <section class="container">
+      <div class="text-container">
+        <div class="text-box">
+          <h3>Past Missions</h3>
+      
+    </div>
+    <div class="text-box">
+      <h3>Launch</h3>
+      
+    </div>
+    <div class="text-box">
+      <h3>Future Missions</h3>
+      
+    </div>
+  </div>
+      
+</section>
+    
+    <div class="reviewscont">
+    <div class="text-title">
+      <h2 id="revheader">Why Choose Us? </h2>
+      <p>.</p>
+      <div class="reviews">
+         <div class="container reveal_why">
+  </div>
+    </div>
+    </div>
+    
+    </div>
+    <div class="review">
+    <img src="icon1.png"></img>
+      <h2> of Astranouts in satatilites were launched by cosmic launch</h2>
+      <img class="iconnum" src="23.png"></img>
+</div>
+    
+  </div>
+<h2> of Astranouts in satatilites were launched by cosmic launch</h2>
+    
+  </div>
+  <!--img class="earthPicBg" src= "earthBg.png"></img-->
+
+ 
+ <script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 10;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+   
+ 
+  </script>
+  
+
+  
+<!---https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg-->
+
+</body>
+</html>
